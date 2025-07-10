@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+:root {
+  --themeColor: #e72424;
+  --bgColor: #fff;
+  --textColor: #111;
+}
+body {
+  /* background-color: black; */
+  /* color: white; */
+  width: 100%;
+  width: 100%;
+}
+.col {
+  background-color: var(--themeColor);
+}
+.hero {
+  border: 2px solid white;
+}
+@media (min-width: 1000px) {
+  #root {
+    width: 80%;
+    margin: auto;
+  }
+}
