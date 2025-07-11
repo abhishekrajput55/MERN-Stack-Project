@@ -1,21 +1,65 @@
 import React from "react";
+import SectionHeadStyle from "./SectionHeadStyle";
+
+// Card titles and placeholder images (replace with real images later)
+const cardData = [
+  { title: "FMCG Product", img: "https://via.placeholder.com/150?text=FMCG" },
+  {
+    title: "Electronics & Appliances",
+    img: "https://via.placeholder.com/150?text=Electronics",
+  },
+  {
+    title: "Clothing & Accessories",
+    img: "https://via.placeholder.com/150?text=Clothing",
+  },
+  {
+    title: "Electrical",
+    img: "https://via.placeholder.com/150?text=Electrical",
+  },
+  {
+    title: "Home & Kitchen",
+    img: "https://via.placeholder.com/150?text=Home+%26+Kitchen",
+  },
+  {
+    title: "Hardware & Sanitaryware",
+    img: "https://via.placeholder.com/150?text=Hardware",
+  },
+  { title: "Toys", img: "https://via.placeholder.com/150?text=Toys" },
+  {
+    title: "Baby & Sports",
+    img: "https://via.placeholder.com/150?text=Baby+%26+Sports",
+  },
+  { title: "Footwear", img: "https://via.placeholder.com/150?text=Footwear" },
+  {
+    title: "Stationery",
+    img: "https://via.placeholder.com/150?text=Stationery",
+  },
+];
 
 const Category = () => {
   return (
-    <div className="w-full h-fit border">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-      blanditiis libero eos molestias iste rem ex ipsum maxime laboriosam
-      expedita consequuntur minima praesentium sit earum laudantium. Magni vel
-      numquam accusamus! Lorem ipsum, dolor sit amet consectetur adipisicing
-      elit. Quisquam, maiores vel? Nihil, explicabo? Rem voluptate nisi,
-      veritatis iure numquam suscipit quisquam magnam aspernatur voluptas autem
-      provident inventore soluta expedita eum. Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Cupiditate fugit quibusdam laudantium quae
-      rem accusantium facilis hic, ab officia assumenda mollitia similique
-      aliquam nihil sapiente nam. Laboriosam voluptatibus illo veritatis
-      dignissimos fugit. Atque, earum soluta sapiente voluptate officia quam
-      debitis. Tempore, corporis debitis repellat magnam eveniet nulla illo
-      aspernatur amet!
+    <div className="max-w-7xl mx-auto px-4 py-10 border">
+      <SectionHeadStyle
+        img="src/assets/indexImg/style3.png"
+        heading="Shop by Categories"
+      />
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-between">
+        {cardData.map((item, index) => (
+          <div
+            key={index}
+            className="bg-bgColor rounded-lg shadow-md hover:shadow-lg transition p-4 flex flex-col items-center"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-24 h-24 object-cover mb-4 rounded"
+            />
+            <h3 className="text-sm font-semibold text-center text-themeColor leading-tight">
+              {item.title}
+            </h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
