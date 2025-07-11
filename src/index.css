@@ -25,6 +25,10 @@ body {
 .hero {
   border: 2px solid white;
 }
+/* Index Button */
+.indexButton {
+  border: 2px solid blue;
+}
 @media (min-width: 1000px) {
   #root {
     width: 80%;

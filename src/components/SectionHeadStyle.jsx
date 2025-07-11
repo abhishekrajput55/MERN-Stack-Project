@@ -13,7 +13,7 @@ const SectionHeadStyle = ({ img, heading, justify = "center" }) => {
       }`}
     >
       <img src={img} alt="head-style-Image" className="w-20 h-6" />
-      <h2 className="text-2xl font-bold uppercase mb-8">{heading}</h2>
+      <h2 className="text-2xl font-bold capitalize mb-8">{heading}</h2>
     </div>
   );
 };

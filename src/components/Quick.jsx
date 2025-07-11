@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeadStyle from "./SectionHeadStyle";
+import CardGrid from "./CardGridSection";
 
 // Sample data array
 const quickLinks = [
@@ -23,28 +24,14 @@ const quickLinks = [
 
 const Quick = () => {
   return (
-    <div className="p-6">
+    <div className="max-w-7xl mx-auto px-4 py-10 border">
       <SectionHeadStyle
         img="src/assets/indexImg/style4.png"
         heading="Quick Services"
         justify="start" // or "center"
       />
 
-      <div className=" grid grid-cols-1 max650:grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-6 ">
-        {quickLinks.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-md   p-4 flex flex-col items-center text-center hover:shadow-lg transition"
-          >
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-24 h-24 object-cover mb-3 rounded-full"
-            />
-            <h3 className="text-lg font-semibold">{item.title}</h3>
-          </div>
-        ))}
-      </div>
+      <CardGrid cardData={quickLinks} />
     </div>
   );
 };

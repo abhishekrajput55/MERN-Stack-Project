@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Quick from "./components/Quick";
 import Category from "./components/Category";
+import StartTrading from "./components/StartTrading";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <HeroSection />
       <Quick />
       <Category />
+      <StartTrading />
     </div>
   );
 };
