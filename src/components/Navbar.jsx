@@ -15,7 +15,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className="hidden md:flex items-center gap-8">
           <li className="group relative py-2">
-            <Link to="/" className="text-black">
+            <Link to="/About" className="text-black">
               About Us
               <span className="absolute left-0 bottom-0 w-4 h-[3px] bg-themeColor transition-all duration-300 group-hover:w-full"></span>
             </Link>

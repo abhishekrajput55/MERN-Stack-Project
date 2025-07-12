@@ -13,6 +13,8 @@ import WelcomeSection from "./components/WelcomeSection";
 // Pages
 import Auth from "./pages/Auth";
 import Products from "./pages/Products";
+import CommomFooter from "./components/CommomFooter";
+import About from "./pages/About";
 
 // Home page layout
 const Home = () => {
@@ -24,6 +26,7 @@ const Home = () => {
       <Category />
       <StartTrading />
       <WelcomeSection />
+      <CommomFooter />
     </>
   );
 };
@@ -40,6 +43,8 @@ const App = () => {
 
         {/* Product page (accessible after login) */}
         <Route path="/products" element={<Products />} />
+        {/* About Us page */}
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
