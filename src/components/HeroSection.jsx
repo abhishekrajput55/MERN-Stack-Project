@@ -8,9 +8,7 @@ const HeroSection = () => {
         {/* Text Content */}
         <div className="border w-fit flex flex-col gap-2">
           <h2 className="text-5xl font-bold">Trade-in-offer</h2>
-          <h1 className="text-3xl font-bold">
-            India's largest eB2B Platform for
-          </h1>
+          <h1 className="text-3xl font-bold">India's eB2B Platform for</h1>
           <h1 className="text-5xl font-bold">businesses & shop-owners</h1>
           <p className="font-bold">Save more with coupons & upto 70% off!</p>
         </div>

@@ -24,7 +24,7 @@ const quickLinks = [
 
 const Quick = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 border">
+    <div className="w-full px-4 py-10 border">
       <SectionHeadStyle
         img="src/assets/indexImg/style4.png"
         heading="Quick Services"

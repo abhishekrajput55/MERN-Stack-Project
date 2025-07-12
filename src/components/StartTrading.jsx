@@ -21,7 +21,7 @@ const steps = [
 
 const StartTradingSection = () => {
   return (
-    <div className="w-full h-fit py-10 border">
+    <div className="w-full h-fit py-10 border mt-9 mb-9">
       <SectionHeadStyle
         img="src/assets/indexImg/style3.png"
         heading="Start Trading in 3 Simple Steps"

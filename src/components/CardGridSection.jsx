@@ -3,7 +3,7 @@ import React from "react";
 
 const CardGrid = ({ cardData }) => {
   return (
-    <div className="grid grid-cols-2 sm:[grid-template-columns:repeat(auto-fit,_minmax(200px,_1fr))] gap-6">
+    <div className="grid grid-cols-2 sm:[grid-template-columns:repeat(auto-fit,_minmax(200px,_1fr))] gap-8">
       {cardData.map((item, index) => (
         <div
           key={index}

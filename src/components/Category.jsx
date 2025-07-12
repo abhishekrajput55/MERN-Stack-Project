@@ -39,7 +39,7 @@ const cardData = [
 
 const Category = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10 border">
+    <div className="w-full px-4 py-10 border">
       <SectionHeadStyle
         img="src/assets/indexImg/style3.png"
         heading="Shop by Categories"
