@@ -8,7 +8,7 @@ const SectionHeadStyle = ({ img, heading, justify = "center" }) => {
 
   return (
     <div
-      className={`border flex flex-col ${
+      className={`px-5 pt-2 flex flex-col ${
         justifyClass[justify] || justifyClass.center
       }`}
     >

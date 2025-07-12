@@ -3,7 +3,7 @@ import SectionHeadStyle from "./SectionHeadStyle";
 
 const WelcomeSection = () => {
   return (
-    <div className="w-full h-fit mt-9 mb-9 border">
+    <div className="w-full h-fit mt-9 mb-9 bg-red-50 rounded-md">
       <SectionHeadStyle
         img="src/assets/indexImg/style4.png"
         heading="Welcome to Wholesale Market"
