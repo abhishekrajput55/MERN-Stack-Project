@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -37,114 +37,122 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-12">
-      <div className="w-full max-w-md p-8 bg-white shadow-xl rounded-lg border">
-        <h2 className="text-3xl font-bold text-center text-[#e72424] mb-6 capitalize">
-          {role === "Admin" ? "Admin Login" : isLogin ? "Login" : "Register"} as{" "}
-          {role}
-        </h2>
+    <div className="w-full  min-h-screen flex items-center justify-center bg-gray-100 px-4 py-12 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="w-full max-w-md  bg-theme shadow-xl rounded-lg border">
+        <div className=" p-5 bg-themeColor rounded-t-lg">
+          <Link to="/">
+            <p className="mb-4 cursor-pointer hover:underline text-bgColor">
+              <i className="ri-arrow-left-line font-bold ml-1"></i>Home
+            </p>
+          </Link>
+          <h2 className="text-3xl font-bold text-center text-bgColor mb-6 capitalize">
+            {role === "Admin" ? "Admin Login" : isLogin ? "Login" : "Register"}{" "}
+            as {role}
+          </h2>
 
-        {/* Role Selector */}
-        <select
-          value={role}
-          onChange={(e) => {
-            setRole(e.target.value);
-            setIsLogin(true); // Force login mode for Admin
-          }}
-          className="w-full border border-gray-300 p-2 rounded mb-4"
-        >
-          <option value="Retailer">Retailer</option>
-          <option value="Seller">Seller</option>
-          <option value="Admin">Admin</option>
-        </select>
+          {/* Role Selector */}
+          <select
+            value={role}
+            onChange={(e) => {
+              setRole(e.target.value);
+              setIsLogin(true); // Force login mode for Admin
+            }}
+            className="w-full border border-gray-300 p-2 rounded mb-4"
+          >
+            <option value="Retailer">Retailer</option>
+            <option value="Seller">Seller</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+        <div className="p-8">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Only show these fields if NOT login and NOT Admin */}
+            {!isLogin && role !== "Admin" && (
+              <>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="Mobile Number (User ID)"
+                  value={formData.mobile}
+                  onChange={handleMobileChange}
+                  className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
+                  required
+                />
+                <input
+                  type="text"
+                  name="companyName"
+                  placeholder="Company / Shop Name"
+                  value={formData.companyName}
+                  onChange={handleChange}
+                  className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
+                  required
+                />
+                <input
+                  type="text"
+                  name="ownerName"
+                  placeholder="Owner Name"
+                  value={formData.ownerName}
+                  onChange={handleChange}
+                  className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
+                  required
+                />
+                <input
+                  type="file"
+                  name="document"
+                  onChange={handleChange}
+                  className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
+                  required
+                />
+              </>
+            )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Only show these fields if NOT login and NOT Admin */}
-          {!isLogin && role !== "Admin" && (
-            <>
+            {/* Common Fields for all roles */}
+            {(isLogin || role === "Admin") && (
               <input
                 type="tel"
                 name="mobile"
                 placeholder="Mobile Number (User ID)"
                 value={formData.mobile}
                 onChange={handleMobileChange}
-                className="w-full border p-2 rounded"
+                className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
                 required
               />
-              <input
-                type="text"
-                name="companyName"
-                placeholder="Company / Shop Name"
-                value={formData.companyName}
-                onChange={handleChange}
-                className="w-full border p-2 rounded"
-                required
-              />
-              <input
-                type="text"
-                name="ownerName"
-                placeholder="Owner Name"
-                value={formData.ownerName}
-                onChange={handleChange}
-                className="w-full border p-2 rounded"
-                required
-              />
-              <input
-                type="file"
-                name="document"
-                onChange={handleChange}
-                className="w-full border p-2 rounded"
-                required
-              />
-            </>
-          )}
+            )}
 
-          {/* Common Fields for all roles */}
-          {(isLogin || role === "Admin") && (
             <input
-              type="tel"
-              name="mobile"
-              placeholder="Mobile Number (User ID)"
-              value={formData.mobile}
-              onChange={handleMobileChange}
-              className="w-full border p-2 rounded"
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full border p-2 rounded focus:outline-none focus:ring-2 focus:ring-themeColor"
               required
             />
-          )}
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-            className="w-full border p-2 rounded"
-            required
-          />
-
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="relative w-full py-3 font-semibold group bg-bgColor text-themeColor border rounded-sm overflow-hidden"
-          >
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-themeColor transition-all duration-300 group-hover:w-full"></span>
-            {isLogin ? "Login" : "Register Now"}
-            <i className="ri-arrow-right-line font-bold ml-1"></i>
-          </button>
-        </form>
-
-        {/* Toggle Login/Register - Hidden for Admin */}
-        {role !== "Admin" && (
-          <p className="text-center mt-6 text-sm">
-            {isLogin ? "Don't have an account?" : "Already registered?"}{" "}
+            {/* Submit Button */}
             <button
-              onClick={() => setIsLogin(!isLogin)}
-              className="text-blue-600 hover:underline"
+              type="submit"
+              className="relative w-full py-3 font-semibold group bg-bgColor text-themeColor border rounded-sm overflow-hidden"
             >
-              {isLogin ? "Register here" : "Login here"}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-themeColor transition-all duration-300 group-hover:w-full"></span>
+              {isLogin ? "Login" : "Register Now"}
+              <i className="ri-arrow-right-line font-bold ml-1"></i>
             </button>
-          </p>
-        )}
+          </form>
+
+          {/* Toggle Login/Register - Hidden for Admin */}
+          {role !== "Admin" && (
+            <p className="text-center mt-6 text-sm">
+              {isLogin ? "Don't have an account?" : "Already registered?"}{" "}
+              <button
+                onClick={() => setIsLogin(!isLogin)}
+                className="text-blue-600 hover:underline"
+              >
+                {isLogin ? "Register here" : "Login here"}
+              </button>
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

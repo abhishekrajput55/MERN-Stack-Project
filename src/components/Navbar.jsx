@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between lg:max-w-[90%] w-full mx-auto px-4 md:px-10 lg:px-28 py-5 font-bold">
         {/* Logo */}
         <h1 className="text-2xl text-themeColor">
-          <Link to="/">BigSmart</Link>
+          <Link to="/products">BigSmart</Link>
         </h1>
 
         {/* Navigation Links */}

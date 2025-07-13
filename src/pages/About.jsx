@@ -7,6 +7,11 @@ const About = () => {
     <section className="w-full bg-bgColor py-16 px-6 md:px-20 text-gray-800">
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Heading */}
+        <Link to="/">
+          <p className="mb-4 cursor-pointer hover:text-themeColor ">
+            <i className="ri-arrow-left-line font-bold ml-1"></i>Home
+          </p>
+        </Link>
         <h2 className="text-3xl font-bold text-themeColor uppercase text-center">
           Our Story
         </h2>
