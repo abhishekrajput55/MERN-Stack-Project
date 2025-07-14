@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Homepage components
 import Navbar from "./components/Navbar";
@@ -35,12 +35,20 @@ const Home = () => {
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/auth" element={<Auth />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+    <Router>
+      <Routes>
+        {/* Home page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Login/Register combined page */}
+        <Route path="/auth" element={<Auth />} />
+
+        {/* Product page (accessible after login) */}
+        <Route path="/products" element={<Products />} />
+        {/* About Us page */}
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 };
 

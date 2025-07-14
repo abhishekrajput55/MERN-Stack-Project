@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* <h1 className="text-xl text-themeColor"> */}
         <Link to="/products">
           <img
-            src="public/assets/indeximg/weblogo-2.png"
+            src="src/assets/indeximg/weblogo-2.png"
             alt="website logo"
             className="h-24"
           />
