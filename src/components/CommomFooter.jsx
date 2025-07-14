@@ -6,7 +6,7 @@ const CommomFooter = () => {
   const hideAuthLinks = ["/products", "/dashboard"].includes(location.pathname);
 
   return (
-    <footer className="text-bgColor bg-textColor w-full pt-10 px-6 mt-10">
+    <footer className="text-bgColor bg-textColor w-full pt-10 px-6 mt-10 rounded-t-lg">
       {/* Top Row */}
       <div className="flex flex-col md:flex-row justify-between items-center bg-themeColor py-5 px-4 rounded">
         <p className="text-sm sm:text-base font-medium text-center md:text-left mb-3 md:mb-0">

@@ -6,11 +6,17 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-bgColor shadow-xl z-50">
-      <div className="flex items-center justify-between lg:max-w-[90%] w-full mx-auto px-4 md:px-10 lg:px-28 py-5 font-bold">
+      <div className="flex items-center justify-between lg:max-w-[90%] w-full mx-auto px-4 md:px-10 lg:px-28 py-1 font-bold">
         {/* Logo */}
-        <h1 className="text-2xl text-themeColor">
-          <Link to="/products">BigSmart</Link>
-        </h1>
+        {/* <h1 className="text-xl text-themeColor"> */}
+        <Link to="/products">
+          <img
+            src="src/assets/indeximg/weblogo-2.png"
+            alt="website logo"
+            className="h-24"
+          />
+        </Link>
+        {/* </h1> */}
 
         {/* Navigation Links */}
         <ul className="hidden md:flex items-center gap-8">

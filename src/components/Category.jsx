@@ -4,33 +4,33 @@ import CardGrid from "./CardGridSection";
 
 // Card titles and placeholder images (replace with real images later)
 const cardData = [
-  { title: "FMCG Product", img: "https://via.placeholder.com/150?text=FMCG" },
+  { title: "FMCG Product", img: "src/assets/indeximg/foodimg1.png" },
   {
     title: "Electronics & Appliances",
-    img: "https://via.placeholder.com/150?text=Electronics",
+    img: "src/assets/indeximg/electronicimg2.png",
   },
   {
     title: "Clothing & Accessories",
-    img: "https://via.placeholder.com/150?text=Clothing",
+    img: "src/assets/indeximg/clothingimg3.png",
   },
   {
     title: "Electrical",
-    img: "https://via.placeholder.com/150?text=Electrical",
+    img: "src/assets/indeximg/electrical4.png",
   },
   {
     title: "Home & Kitchen",
-    img: "https://via.placeholder.com/150?text=Home+%26+Kitchen",
+    img: "src/assets/indeximg/cookingimg5.png",
   },
   {
     title: "Hardware & Sanitaryware",
-    img: "https://via.placeholder.com/150?text=Hardware",
+    img: "src/assets/indeximg/Hardwareimg6.png",
   },
   { title: "Toys", img: "https://via.placeholder.com/150?text=Toys" },
   {
-    title: "Baby & Sports",
-    img: "https://via.placeholder.com/150?text=Baby+%26+Sports",
+    title: "Luggage",
+    img: "src/assets/indeximg/luggageimg1.png",
   },
-  { title: "Footwear", img: "https://via.placeholder.com/150?text=Footwear" },
+  { title: "Footwear", img: "src/assets/indeximg/footwearimg9.png" },
   {
     title: "Stationery",
     img: "https://via.placeholder.com/150?text=Stationery",

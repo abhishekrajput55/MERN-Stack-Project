@@ -5,20 +5,20 @@ import CardGrid from "./CardGridSection";
 // Sample data array
 const quickLinks = [
   {
-    title: "Electronics",
-    img: "https://via.placeholder.com/100?text=Electronics",
+    title: "Free Delivery",
+    img: "src/assets/indexImg/why-we-img-1.png",
   },
   {
-    title: "Fashion",
-    img: "https://via.placeholder.com/100?text=Fashion",
+    title: "Save Money",
+    img: "src/assets/indexImg/why-we-img-3.png",
   },
   {
-    title: "Groceries",
-    img: "https://via.placeholder.com/100?text=Groceries",
+    title: "Online Order",
+    img: "src/assets/indexImg/why-we-img-5.png",
   },
   {
-    title: "Furniture",
-    img: "https://via.placeholder.com/100?text=Furniture",
+    title: "24/7 Services",
+    img: "src/assets/indexImg/why-we-img-6.png",
   },
 ];
 

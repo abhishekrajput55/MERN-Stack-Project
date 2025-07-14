@@ -15,6 +15,7 @@ import Auth from "./pages/Auth";
 import Products from "./pages/Products";
 import CommomFooter from "./components/CommomFooter";
 import About from "./pages/About";
+import BrandLogoSlideBar from "./components/BrandLogoSlideBar";
 
 // Home page layout
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
       <Category />
       <StartTrading />
       <WelcomeSection />
+      <BrandLogoSlideBar />
       <CommomFooter />
     </>
   );
