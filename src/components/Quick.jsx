@@ -6,19 +6,19 @@ import CardGrid from "./CardGridSection";
 const quickLinks = [
   {
     title: "Free Delivery",
-    img: "src/assets/indexImg/why-we-img-1.png",
+    img: "/assets/indexImg/why-we-img-1.png",
   },
   {
     title: "Save Money",
-    img: "src/assets/indexImg/why-we-img-3.png",
+    img: "/assets/indexImg/why-we-img-3.png",
   },
   {
     title: "Online Order",
-    img: "src/assets/indexImg/why-we-img-5.png",
+    img: "/assets/indexImg/why-we-img-5.png",
   },
   {
     title: "24/7 Services",
-    img: "src/assets/indexImg/why-we-img-6.png",
+    img: "/assets/indexImg/why-we-img-6.png",
   },
 ];
 
