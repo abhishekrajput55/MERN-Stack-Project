@@ -4,8 +4,12 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section className="w-full bg-bgColor py-16 px-6 md:px-20 text-gray-800">
-      <div className="max-w-5xl mx-auto space-y-8">
+    <section className="relative w-full bg-bgColor py-16 px-6 md:px-20 text-gray-800 bg-[url('src/assets/indeximg/weblogo-2.png')] bg-no-repeat bg-center bg-cover">
+      {/* Faded overlay */}
+      <div className="absolute inset-0 bg-white/90"></div>
+
+      {/* Your actual content */}
+      <div className="relative z-10 max-w-5xl mx-auto space-y-8">
         {/* Heading */}
         <Link to="/">
           <p className="mb-4 cursor-pointer hover:text-themeColor ">

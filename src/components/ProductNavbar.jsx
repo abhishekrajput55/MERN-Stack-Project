@@ -6,11 +6,15 @@ const ProductNavbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-bgColor shadow-xl z-50">
-      <div className="flex flex-wrap items-center justify-between lg:max-w-[90%] w-full mx-auto px-4 md:px-10 lg:px-28 py-5 gap-4">
+      <div className="flex flex-wrap items-center justify-between lg:max-w-[90%] w-full mx-auto px-4 md:px-10 lg:px-28 py-2 gap-4">
         {/* Logo */}
-        <div className="flex items-center text-themeColor font-bold text-xl flex-shrink-0">
-          <Link to="/products">Wholesale Market</Link>
-        </div>
+        <Link to="/products">
+          <img
+            src="src/assets/indeximg/weblogo-2.png"
+            alt="website logo"
+            className="h-24"
+          />
+        </Link>
 
         {/* Search Bar */}
         <div className="w-full md:flex-grow md:max-w-xl">
