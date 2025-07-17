@@ -33,7 +33,7 @@ const CommomFooter = () => {
         {/* About */}
         <div>
           <h2 className="text-lg font-bold text-themeColor mb-3">
-            Wholesale Market
+            Wholesale B2B Market
           </h2>
           <p className="text-gray-200 leading-relaxed">
             We are committed to providing comprehensive B2B services that
@@ -116,7 +116,7 @@ const CommomFooter = () => {
 
             <li className="flex items-center gap-2">
               <i className="ri-mail-line text-lg" />
-              info@example.com
+              wholesaleb2bmarket@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <i className="ri-phone-line text-lg" />
@@ -134,7 +134,7 @@ const CommomFooter = () => {
       <div className="text-center text-sm mt-10 py-4 border-t border-gray-300 text-gray-400">
         © 2020 Copyright:{" "}
         <Link to="/" className="hover:underline text-themeColor font-medium">
-          wholesalemarket.com
+          wholesaleb2bmarket.com
         </Link>
       </div>
     </footer>

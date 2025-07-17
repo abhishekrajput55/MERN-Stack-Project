@@ -5,8 +5,8 @@ const WelcomeSection = () => {
   return (
     <div className="w-full h-fit mt-9 mb-9 bg-red-50 rounded-md">
       <SectionHeadStyle
-        img="src/assets/indexImg/style4.png"
-        heading="Welcome to Wholesale Market"
+        img="/assets/indexImg/style4.png"
+        heading="Welcome to Wholesale B2B Market"
         justify="start" // or "center"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4 py-10">
@@ -17,7 +17,7 @@ const WelcomeSection = () => {
           </h1>
           <div className="aspect-video rounded overflow-hidden shadow-md">
             <video
-              src="src/assets/indexImg/WelcomeVideo.mp4"
+              src="/assets/indexImg/WelcomeVideo.mp4"
               autoPlay
               loop
               muted
@@ -33,13 +33,22 @@ const WelcomeSection = () => {
         <div className="flex flex-col gap-6">
           {[
             {
-              title: "Great wholesale prices",
-              desc: "Avail best prices on top quality products.",
+              title: "Quick doorstep delivery ",
+              desc: "Get delivery of your orders at your doorstep",
             },
-            { title: "Step 2", desc: "Browse thousands of products." },
-            { title: "Step 3", desc: "Add items to your cart." },
+            {
+              title: "Wide range from top sellers & brands",
+              desc: "Shop from 25,000 top sellers across India ",
+            },
+            {
+              title: "Credit Facility Avaliable ",
+              desc: "Avail best prices on top quality products ",
+            },
             { title: "Step 4", desc: "Place your order securely." },
-            { title: "Step 5", desc: "Track delivery & grow your business." },
+            {
+              title: "Smart returns",
+              desc: "Enjoy simple & hassle-free returns process ",
+            },
           ].map((item, index) => (
             <div
               key={index}

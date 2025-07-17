@@ -10,6 +10,7 @@ export default {
         themeColor: "var(--themeColor)",
         bgColor: "var(--bgColor)",
         textColor: "var(--textColor)",
+        litegrey: "text-gray-500",
       },
     },
   },

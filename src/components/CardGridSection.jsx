@@ -3,7 +3,7 @@ import React from "react";
 
 const CardGrid = ({ cardData }) => {
   return (
-    <div className="grid grid-cols-2 sm:[grid-template-columns:repeat(auto-fit,_minmax(200px,_1fr))] gap-8">
+    <div className="grid grid-cols-2 sm:[grid-template-columns:repeat(auto-fit,_minmax(250px,_1fr))] gap-x-10 gap-y-4">
       {cardData.map((item, index) => (
         <div
           key={index}
@@ -12,9 +12,9 @@ const CardGrid = ({ cardData }) => {
           <img
             src={item.img}
             alt={item.title}
-            className="w-24 h-24 object-cover mb-4 rounded"
+            className="w-56 h-fit mb-4 rounded"
           />
-          <h3 className="text-sm font-semibold text-center text-themeColor leading-tight">
+          <h3 className="text-sm font-semibold text-center text-textColor leading-tight">
             {item.title}
           </h3>
         </div>

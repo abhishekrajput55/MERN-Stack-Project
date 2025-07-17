@@ -10,7 +10,7 @@ const ProductNavbar = () => {
         {/* Logo */}
         <Link to="/products">
           <img
-            src="src/assets/indeximg/weblogo-2.png"
+            src="/assets/indexImg/weblogo-2.png"
             alt="website logo"
             className="h-24"
           />

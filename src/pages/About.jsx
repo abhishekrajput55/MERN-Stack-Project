@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section className="relative w-full bg-bgColor py-16 px-6 md:px-20 text-gray-800 bg-[url('src/assets/indeximg/weblogo-2.png')] bg-no-repeat bg-center bg-cover">
+    <section className="relative w-full bg-bgColor py-16 px-6 md:px-20 text-gray-800 bg-[url('/assets/indexImg/weblogo-2.png')] bg-no-repeat bg-center bg-cover">
       {/* Faded overlay */}
       <div className="absolute inset-0 bg-white/90"></div>
 

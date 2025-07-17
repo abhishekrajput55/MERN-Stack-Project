@@ -3,27 +3,27 @@ import SectionHeadStyle from "./SectionHeadStyle";
 import Button from "./Button";
 const steps = [
   {
-    img: "src/assets/indeximg/tradeimg1.png",
-    title: "Register",
-    desc: "Create your business account and get access to thousands of suppliers.",
+    img: "/assets/indexImg/tradeimg1.png",
+    title: "Create an account",
+    desc: "Register using your mobile number. Enter your Name, Shop name and Pincode",
   },
   {
-    img: "src/assets/indeximg/tradeimg2.png",
-    title: "Browse Products",
-    desc: "Explore a wide range of verified B2B products across categories.",
+    img: "/assets/indexImg/tradeimg2.png",
+    title: "Complete shop KYC",
+    desc: "Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence ",
   },
   {
-    img: "src/assets/indeximg/tradeimg3.png",
-    title: "Start Trading",
-    desc: "Place orders securely and grow your business with confidence.",
+    img: "/assets/indexImg/tradeimg3.png",
+    title: "Start Ordering",
+    desc: "Browse and order products for your shop from sellers & brands ",
   },
 ];
 
 const StartTradingSection = () => {
   return (
-    <div className="w-full h-fit py-10 border mt-9 mb-9">
+    <div className="w-full h-fit py-10 mt-9 mb-9">
       <SectionHeadStyle
-        img="src/assets/indexImg/style3.png"
+        img="/assets/indexImg/style3.png"
         heading="Start Trading in 3 Simple Steps"
       />
 
@@ -41,7 +41,7 @@ const StartTradingSection = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-4">
         <Button />
       </div>
     </div>
